@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="book.css">
+  </head>
+  <body onload="onInit()">
+    <h1>Welcome to my book shop</h1>
+    <section class=" buttonInput">
+      <label for="price">book price:</label>
+      <input type='number' name='price' class='inputAdd'  placeholder='book price?' /> 
+      <label for="price">book name:</label>
+      <input type='text' class='inputAdd' name='bookname'  placeholder='book name?' /> 
+      <button class='btnAdd'onclick=" onAddBook()">Add Book</button>
+  </section>
+      <table border="4px"  cellspacing="2px" cellpadding="2px" >
+        <thead ><th onclick='onSetSortBy("name")'> name</th>
+            <th> id </th>
+            <th onclick='onSetSortBy("price")'> price </th>
+             <th>imgUrl</th>
+             <th>Actions</th>
+             <th>Rate the book</th>
+            </thead>
+        <tbody class="container"></tbody>
+      </table>
+      <div class='modalClosed'>
+
+    </div>
+    <div class="user-msg"></div>
+
+    <script src="util.js"></script>
+    <script src="local-book.js"></script>
+    <script src="service-book.js"></script>
+    <script src="controller.js"></script>
+  </body>
+</html>

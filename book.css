@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+  text-align: center;
+}
+body {
+  background-color: rgb(14, 230, 96);
+}
+h1 {
+  color: rgb(212, 71, 14);
+  text-align: center;
+}
+table {
+  width: 50%;
+  height: 60%;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+.buttonInput{
+  display: flex;
+  justify-content: center;
+
+}
+.container {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(104, 252, 148);
+}
+.cell {
+  padding: 5px;
+  height: 90px;
+  max-width: 100px;
+}
+img {
+  display: block;
+  height: 100%;
+  width: 60%;
+  margin: 0 auto;
+}
+.cellBtn {
+  margin: 0 auto;
+}
+.Btn {
+  width: 30%;
+}
+.closeModal {
+  height: 20px;
+  z-index: 20;
+  background-color: red;
+  display: block;
+}
+.modal {
+  background-color: rgb(66, 170, 240);
+  max-height: 350px;
+  width: 250px;
+  font-size: 1.5em;
+  z-index: 10;
+  margin: 0 auto;
+  margin-top: -25%;
+  position: relative;
+}
+.modalClosed {
+  display: none;
+}
+li img {
+  height: 40%;
+}
+li {
+  display: inline-grid;
+}
+
+.user-msg {
+  position: fixed;
+  bottom: -100px;
+  right: 10px;
+  background-color: rgb(221, 238, 231);
+  padding: 10px;
+}
+.user-msg.open {
+  bottom: 10px;
+  transition: bottom 0.5s;
+}
+.btnAdd {
+  height: 25px;
+  width: 80px;
+  background-color: rgb(135, 214, 184);
+  margin-left:20px;
+}
+.inputAdd{
+  height: 25px;
+  width: 100px;
+}
